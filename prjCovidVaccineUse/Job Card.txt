@@ -1,0 +1,31 @@
+﻿Covid 19 Vac
+******************************
+Genertal Info
+----------------------------- 
+Hospital Name :
+Address  1 Cape Road
+Private or Public : Private
+Province :  EC
+
+------------------------------
+Information of each person :
+------------------------------
+ID Number :
+Medical Aid :
+Name :
+Surname :
+Refering Dr :
+Blood Type :
+Allergies :
+Had covid :
+Vaccine they are getting : 
+
+ask the user how many people are getting the vacine prog file
+ask for Hospital name
+address
+privarte or public 
+
+
+capture and run  
+
+report run 
