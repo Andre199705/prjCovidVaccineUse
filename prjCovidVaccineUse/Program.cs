@@ -8,16 +8,23 @@ namespace prjCovidVaccineUse
         
         static void Main(string[] args)
         {
-
             info A = new info();
+
+            Console.WriteLine("please indicate if it as a private or an public Hospital ");
+            A.setHospitalPUBPRIV(Console.ReadLine());
+
+            
             Console.WriteLine("please enter wich hospital");
-            A.setHospital_Name(Console.ReadLine());
+            A.setHospitalName(Console.ReadLine());
 
             Console.WriteLine("please enter the address");
             A.setAddress(Console.ReadLine());
 
-            Console.WriteLine("please indicate if it as a private or an public Hospital ");
-            A.setHospital_Name(Console.ReadLine());
+            Console.WriteLine("In wich province is the Hospital");
+            A.setProvince(Console.ReadLine());
+
+
+
             //capture the info from the capture class
             Capture c = new Capture();
             c.addPerson();

@@ -12,21 +12,66 @@ namespace prjCovidVaccineUse
 		//Special Student Vars
 		private static int iSizeArray = 0;
 		private static int iCounter = 0;
+		
 
 
 		#region gets and sets for the main vars
 		private static String strHospital_Name;
-
-       
-
         private static String strAddress;
-		private static bool bType;//private or public hospital
-		private static char cProvince;
+		private static String strHospitalPUBPRIV;
+		private static String strProvince;
+
+
+		public String getHospital_Name()
+		{
+			return Hospital_Name;
+		}
+
+		public void setHospitalName(String strHospitalName)
+        {
+			strHospital_Name = strHospitalName;
+        }
+
+		public String getAddress()
+		{
+			return Address;
+			
+		}
+
+		public void setAddress(string Address)
+        {
+			strAddress = Address;
+        }
+
+		public String getProvince()
+        {
+			return strProvince;
+
+        }
+
+		public void setProvince(String strProvince)
+        {
+			strProvince = Province;
+        }
+
+		public String getHospitalPUBPRIV()
+        {
+			return strHospitalPUBPRIV;
+
+		}
+
+		public void setHospitalPUBPRIV(String HospitalPUBPRIV)
+        {
+			strHospitalPUBPRIV = HospitalPUBPRIV;
+
+		}
+
+
 
 		public string Hospital_Name { get => strHospital_Name; set => strHospital_Name = value; }
 		public string Address { get => strAddress; set => strAddress = value; }
-		public bool Type { get => bType; set => bType = value; }
-		public char Province { get => cProvince; set => cProvince = value; }
+		//public bool Type { get => bType; set => bType = value; }
+		public String Province { get => strProvince; set => strProvince = value; }
 
 
 		#endregion
@@ -132,16 +177,7 @@ namespace prjCovidVaccineUse
 			return Vaccine[x];
 		}
 
-		public String getHospital_Name()
-		{
-			return Hospital_Name ;
-		}
-
-		public String getAddress()
-		{
-			return Address;
-;
-		}
+		
 		
 
 
