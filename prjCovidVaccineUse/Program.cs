@@ -9,6 +9,7 @@ namespace prjCovidVaccineUse
         static void Main(string[] args)
         {
             info A = new info();
+            //Prompting the user
 
             Console.WriteLine("please indicate if it as a private or an public Hospital ");
             A.setHospitalPUBPRIV(Console.ReadLine());

@@ -14,11 +14,11 @@ namespace prjCovidVaccineUse
             info A = new info();
 
             Console.Clear();
-
+            //Asking user 
             Console.WriteLine("Hospital name " + A.getHospital_Name());
             Console.WriteLine("Hospital name " + A.getAddress());
             Console.WriteLine("Hospital name " + A.getHospitalPUBPRIV());
-         
+         //wanting to loop the array
             for (int x = 0; x < A.size(); x++)
             {
                 Console.WriteLine("ID Number : {0}" + A.getIDNumber(x) +
@@ -31,8 +31,7 @@ namespace prjCovidVaccineUse
                           "\nVaccine brand : {7} " + A.getVaccine(x));
 
 
-                         // , A.getIDNumber(x), A.getMedicalAid(x), A.getName(x), A.getSurname(x),
-                         // A.getRefDr(x), A.getAllergies(x), A.getCovidPostive(x), A.getVaccine(x));
+                       
 
 
 
