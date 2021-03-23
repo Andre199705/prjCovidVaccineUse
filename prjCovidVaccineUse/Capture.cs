@@ -4,42 +4,52 @@ using System.Text;
 
 namespace prjCovidVaccineUse
 {
-    class Capture
-    {
-		public void addPerson()
+	class Capture
+	{
+		public void getPatientDetails()
 		{
-			
-			
-				Console.Write("Please enter your name :");
-				String strName = Console.ReadLine();
+			info i = new info();
 
-				Console.Write("Please enter you last name :");
-				String strSurname = Console.ReadLine();
+			Console.Clear();
 
-				Console.Write("Please enter your ID number :");
-				String strID = Console.ReadLine();
+			for(int x = 0; x < i.size(); x++)
+            {
+                Console.WriteLine("Please enter the patient ID number: ");
+				String ID_Number = Console.ReadLine();
 
-				Console.Write("Are you on medical aid ?  ");
-				String strMedic = Console.ReadLine();
+                Console.WriteLine("Please enter the patient" + (x + 1) + "name: ");
+				String Name = Console.ReadLine();
 
-				Console.Write("Who was your refering Doc? :");
-				String strRefDr = Console.ReadLine();
+				Console.WriteLine("Please enter the patient Surname ");
+				String Surname = Console.ReadLine();
 
-				Console.Write("What is your blood type? :  ");
-				String cBloodType = Console.ReadLine();
+				Console.WriteLine("Please enter the patient Medical Aid  ");
+				String MedicalAid = Console.ReadLine();
 
-				Console.Write("Do you have any allergies? :  ");
-				String strAllergies = Console.ReadLine();
+				Console.WriteLine("Please enter the Docters name that will be treating the patient  ");
+				String RefDr = Console.ReadLine();
 
-				Console.Write("Have you had covid? :  ");
-				String bCovid = Console.ReadLine();
+                Console.WriteLine("Please enter the patient blood type");
+				char BloodType = Convert.ToChar(Console.ReadLine());
 
-				Console.Write("Which vaccine are you getting? :  ");
+				Console.WriteLine("Please enter the allergies of the patient ");
+				String Allergies = Console.ReadLine();
+
+				Console.WriteLine("Please enter if the patient is covid Positive (True/ False) :  ");
+				Boolean CovidPositive  = Convert.ToBoolean( Console.ReadLine());
+
+                Console.WriteLine("Please enter if the patient will be taking the vaccine ");
 				String strVac = Console.ReadLine();
 
-			//Done
 
-		}
+			}
+
+		
+
+
+				//Done
+
+			}
 
 
 		}
